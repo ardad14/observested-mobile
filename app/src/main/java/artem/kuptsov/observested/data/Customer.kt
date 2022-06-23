@@ -8,4 +8,5 @@ data class Customer (
     var name: String,
     var surname: String,
     var age: String,
+    var pivot: CustomerPlace?
 ) : Serializable

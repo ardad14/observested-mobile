@@ -5,13 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
-import androidx.core.graphics.component1
-import androidx.core.graphics.component2
-import androidx.core.graphics.component3
 import artem.kuptsov.observested.R
-import artem.kuptsov.observested.api.objects.GetPlacesForUser
 import artem.kuptsov.observested.api.objects.Login
-import artem.kuptsov.observested.data.Place
 import artem.kuptsov.observested.data.user.UserLoginForm
 import artem.kuptsov.observested.data.user.UserLoginResponse
 import retrofit2.Call

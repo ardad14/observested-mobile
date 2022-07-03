@@ -57,4 +57,9 @@ class MainActivity : AppCompatActivity() {
             }
         })
     }
+
+    fun registration(view: View) {
+        val intent = Intent(this, RegistrationActivity::class.java)
+        startActivity(intent)
+    }
 }

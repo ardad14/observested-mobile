@@ -33,7 +33,7 @@ class PlacesListActivity : AppCompatActivity() {
                     response: Response<ArrayList<Place>>
                 ) {
                     val listView = findViewById<ListView>(R.id.places_list)
-                    val adapter = response.body()?.let { PlacesListAdapter(context, it) }
+                    val adapter = response.body()?.let { PlacesListAdapter(context, it, supportFragmentManager) }
                     listView.adapter = adapter
                 }
             })

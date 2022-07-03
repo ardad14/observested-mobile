@@ -5,8 +5,9 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import artem.kuptsov.observested.R
 import artem.kuptsov.observested.ui.fragment.DashboardFragment
-import artem.kuptsov.observested.ui.fragment.InfoFragment
+import artem.kuptsov.observested.ui.fragment.MapsFragment
 import artem.kuptsov.observested.ui.fragment.PlaceFragment
+import artem.kuptsov.observested.ui.fragment.ProductFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class BottomNavigationActivity : AppCompatActivity() {
@@ -29,8 +30,12 @@ class BottomNavigationActivity : AppCompatActivity() {
                     loadFragment(PlaceFragment(placeId))
                     return@setOnNavigationItemReselectedListener
                 }
-                R.id.info -> {
-                    loadFragment(InfoFragment())
+                R.id.product -> {
+                    loadFragment(ProductFragment(placeId))
+                    return@setOnNavigationItemReselectedListener
+                }
+                R.id.map-> {
+                    loadFragment(MapsFragment())
                     return@setOnNavigationItemReselectedListener
                 }
             }

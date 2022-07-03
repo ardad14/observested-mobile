@@ -5,7 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import artem.kuptsov.observested.R
 import artem.kuptsov.observested.api.objects.GetPlaceById
 import artem.kuptsov.observested.data.Place
@@ -29,6 +31,17 @@ class PlaceFragment(private val placeId: Int) : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_place, container, false)
         getPlace(view, placeId)
+
+        val editIcon = view.findViewById<ImageView>(R.id.edit)
+
+        val editPlaceFragment = EditPlaceBottomDialogFragment()
+        val args = Bundle()
+        args.putInt("placeId", placeId)
+        editPlaceFragment.arguments = args
+
+        editIcon.setOnClickListener {
+            editPlaceFragment.show(requireActivity().getSupportFragmentManager(), "EditPlace")
+        }
 
         return view
     }

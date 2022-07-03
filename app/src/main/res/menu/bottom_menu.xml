@@ -9,7 +9,12 @@
         android:icon="@drawable/ic_place"
         android:title="Place" />
     <item
-        android:id="@+id/info"
-        android:icon="@drawable/ic_info"
-        android:title="Info" />
+        android:id="@+id/product"
+        android:icon="@drawable/ic_product"
+        android:title="Products" />
+
+    <item
+        android:id="@+id/map"
+        android:icon="@drawable/ic_product"
+        android:title="Map" />
 </menu>

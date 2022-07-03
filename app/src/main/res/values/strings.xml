@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">Observested</string>
-    <string name="registration_title">Регістрація</string>
+    <string name="registration_title">Реєстрація</string>
     <string name="registration_name">Ім`я</string>
     <string name="registration_phone">Телефон</string>
     <string name="registration_email">Пошта</string>
     <string name="registration_password">Пароль</string>
-    <string name="registration_button">Зареєструватися</string>
+    <string name="registration_button"><u>Зареєструватися</u></string>
     <string name="registration_surname">Прізвище</string>
     <string name="signup_title">Увійти</string>
     <string name="singup_button">Увійти</string>
